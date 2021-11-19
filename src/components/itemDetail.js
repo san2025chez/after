@@ -1,7 +1,11 @@
 import React from 'react'
+import {useNavigate} from 'react-router'
 
 export function ItemDetail({ id,title, image, description, price,categoryId }) {
- 
+    const  navigation = useNavigate();
+    const volver= ()=> {
+      navigation('/')
+    }
     return (<div className="box">
     <div className="ui card">
     
@@ -23,6 +27,7 @@ export function ItemDetail({ id,title, image, description, price,categoryId }) {
           22 Friends
         </a>
       </div>
+      <button onClick={volver}>Volver</button>
     </div>
     </div>)
    

@@ -9,10 +9,10 @@ export const NavBar = () => {
   <Navbar bg="dark" variant="dark">
     <Container>
       <Link to="/">Navbar</Link>
-      <Nav className="me-auto">
-        <Link to="/category/desafio">Desafio</Link>
-        <Link to="/category/entrega">Entrega</Link>
-        <Link to="/category/after"> After</Link>
+      <Nav className="me-auto container mx-2">
+        <Link to="/category/desafio" className="container mx-1">Desafio</Link>
+        <Link to="/category/entrega" className="container mx-1">Entrega</Link>
+        <Link to="/category/after"className="container mx-1"> After</Link>
       </Nav>
       <CartWidget />
     </Container>

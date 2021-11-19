@@ -1,8 +1,11 @@
 import React from "react";
 import styles from "./item.css";
 import {Link} from "react-router-dom"
+import { useNavigate } from 'react-router'
 
 export const Item = ({ id,title, image, description, price,categoryId }) => {
+
+
   return(
  <div className="box container my-5">
 <div className="ui card">
@@ -25,7 +28,8 @@ export const Item = ({ id,title, image, description, price,categoryId }) => {
       22 Friends
     </a>
   </div>
-  <Link>Volver</Link>
+
 </div>
+
 </div>)
 };
